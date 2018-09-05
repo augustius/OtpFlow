@@ -12,7 +12,17 @@ OtpFlow provide complete ui for otp and allow you to inject your own endpoint
   s.author           = { 'Augustius' => 'cokroeaugustius@gmail.com' }
   s.source           = { :git => 'https://github.com/augustius/OtpFlow.git', :tag => s.version.to_s }
  
-  s.ios.deployment_target = '10.0'
   s.source_files = 'Sources/*'
+  s.resource_bundles = {
+    'OtpCustomPod' => [
+        'Pod/**/*.xib'
+    ]
+  }
+
+  s.pod_target_xcconfig = {
+     "SWIFT_VERSION" => "4.0",
+  }
+  s.ios.deployment_target = '9.0'
+  s.requires_arc = true
  
 end
