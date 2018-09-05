@@ -12,10 +12,10 @@ OtpFlow provide complete ui for otp and allow you to inject your own endpoint
   s.author           = { 'Augustius' => 'cokroeaugustius@gmail.com' }
   s.source           = { :git => 'https://github.com/augustius/OtpFlow.git', :tag => s.version.to_s }
  
-  s.source_files = 'Sources/*'
+  s.source_files = 'Sources/**/*'
   s.resource_bundles = {
     'OtpCustomPod' => [
-        'Pod/**/*.xib'
+        'Sources/**/*.xib'
     ]
   }
 
